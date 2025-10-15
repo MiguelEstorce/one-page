@@ -2,21 +2,16 @@
 
 
 
-Nome do comercio: dentista 
+Nome do comercio: Mpf assessoria aduaneira
 
 
 
 Descrição: 
-Clínica odontológica especializada em cuidar do seu sorriso com tecnologia, segurança e excelência. Realizamos limpezas, restaurações, clareamentos e lentes,. Seu sorriso merece o melhor cuidado!
 
-😊 Modelo acolhedor e humanizado
+A MPF Assessoria Aduaneira é uma empresa especializada em comércio exterior, atuando desde 2011 com excelência em assessoria, consultoria e desembaraço aduaneiro. Nosso objetivo é oferecer soluções completas e personalizadas para empresas que realizam operações de importação e exportação, garantindo segurança, agilidade e conformidade com todas as normas legais.
 
-Aqui, o seu sorriso é tratado com carinho! Oferecemos atendimento humanizado, ambiente confortável e os melhores profissionais para garantir sua saúde bucal e bem-estar.
+Com uma equipe altamente qualificada e comprometida, a MPF se destaca pela transparência, eficiência e dedicação em cada etapa do processo aduaneiro. Atuamos como parceiros estratégicos de nossos clientes, cuidando de toda a burocracia envolvida para que eles possam focar no crescimento de seus negócios.
 
-💎 Modelo moderno e tecnológico
+Nosso compromisso é simplificar o comércio exterior, assegurando tranquilidade, confiança e resultados reais.
 
-Odontologia moderna e de alta performance! Utilizamos equipamentos de última geração e técnicas avançadas para proporcionar resultados rápidos, seguros e com o máximo de conforto.
-
-🌿 Modelo natural e estético
-
-Cuidamos da estética e da saúde do seu sorriso com técnicas modernas e naturais. Clareamento, alinhamento e estética dental com resultados harmônicos e saudáveis.
+📍 MPF Assessoria Aduaneira – Experiência que conecta o Brasil ao mundo.
