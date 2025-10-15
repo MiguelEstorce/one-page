@@ -2,9 +2,9 @@
 
 
 
-Nome do comercio:
+Nome do comercio: dentista 
 
-comercio fictício
+
 
 Descrição: 
 Clínica odontológica especializada em cuidar do seu sorriso com tecnologia, segurança e excelência. Realizamos limpezas, restaurações, clareamentos e lentes,. Seu sorriso merece o melhor cuidado!
