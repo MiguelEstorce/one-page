@@ -1,0 +1,46 @@
+/**
+folha de estilo do site mpfassessoria.com
+@autor Miguel Dev
+**/
+
+/*layout*************************************/
+
+:root {
+    --azulEscuro:  #00008B;
+    --branco: #ffffff;
+    --azulClaro: #0084ff;
+}
+/*CSS reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+/*fim layout*/
+
+/*phone*/
+
+@media (min-width: 576px){
+   
+}
+/*fim phone */
+/*tablet-inicio*/
+
+@media (min-width: 992px){
+   
+}
+/*fim tablet*/
+
+/*notebook / pc / inicio*/
+@media (min-width: 1400px){
+   
+}
+/*notebook / pc / fim*/
+
+/*notebook / pc / TV /inicio*/
+@media (min-width: 1400px){
+    
+}
+
+/*notebook / pc / TV /fim*/
