@@ -15,16 +15,73 @@ folha de estilo do site mpfassessoria.com
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
     font-family: "Open Sans", sans-serif;
 }
+.container{
+    display: flex;
+}
+
+
 /*fim layout*/
 
-/*phone*/
-
-@media (min-width: 576px){
-   
+/*smartphone portrait*/
+/*CABEÇALHO*/
+header{
+    height: 60px;
+    background-color: var(--azulEscuro);
 }
-/*fim phone */
+.logo img{
+    width: 120px;
+    height: 120px;
+    }
+
+#check{
+    display: none;  /*esconder um elemento*/
+}
+
+label{
+    font-size: 3rem;
+    color: rgba(156, 220, 254, 0.75);
+    position: fixed;
+    top: 5px;
+    right: 15px;
+}
+
+nav ul{
+    list-style: none;
+    height: 100vh; 
+    position: fixed;
+    top: 60px;
+    right: -65%;
+    width: 65%;
+    background-color: rgba(18, 10, 145, 0.99);
+    transition: all 0.8s;
+}
+#check:checked~ul{
+    right: 0px;
+    
+}
+nav ul li{
+    padding: 20px;
+    border-bottom: 1px solid var(--azulClaro);
+    text-align: right;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/*smartphone landscape*/
+@media (min-width: 576px){
+    /* CABEÇALHO */
+    nav ul{
+        width: 40%;
+        right: -40%;
+    }
+}
+/*fim smartphone landscape */
 /*tablet-inicio*/
 
 @media (min-width: 992px){
@@ -32,9 +89,36 @@ folha de estilo do site mpfassessoria.com
 }
 /*fim tablet*/
 
-/*notebook / pc / inicio*/
-@media (min-width: 1400px){
-   
+/*notebook / PC - HD inicio*/
+/*CABEÇALHO*/
+@media (min-width: 1200px){
+    header{
+        height: 100px;
+    }
+
+    .logo img{
+        width: 194px;
+        height: 194px;
+    }
+
+    label{
+        display: none;
+    }
+    nav ul{
+        position: static; /*volta ao padrão*/
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+    }
+
+    nav ul li{
+        float: left;
+        border: 0;
+    }
+
+    nav ul li a:hover{
+        color: red;
+    }
 }
 /*notebook / pc / fim*/
 
