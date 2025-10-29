@@ -1,47 +1,69 @@
 /**
-folha de estilo do site mpfassessoria.com
-@autor Miguel Dev
-**/
+    Folha de estilo do site professorramos.com
+    @author Professor José de Assis
+    @link https://joseassis.com.br
+*/
 
-/*layout*************************************/
+/* Layout >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
+/* Variáveis */
 :root {
-    --azulEscuro:  #00008B;
-    --branco: #ffffff;
-    --azulClaro: #0084ff;
+    --azulClaro: #9cdcfe;
+    --azulMedio: #3498db;
+    --azulEscuro: rgb(3, 28, 172);
+    --branco: #fff;
+    --preto: #000;
 }
-/*CSS reset*/
+
+/* CSS Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "Open Sans", sans-serif;
 }
-.container{
+
+.container {
     display: flex;
+    margin: 0 auto;   
 }
 
+/* Botão */
+.btn {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: var(--azulMedio);
+    padding: 10px 40px;
+    color: var(--branco);
+    border-radius: 25px;
+    border: 2px solid var(--azulEscuro);
+}
 
-/*fim layout*/
+/* Fim - Layout <<<<<<<<<<<<<<<<<<<<<<<<< */
 
-/*smartphone portrait*/
-/*CABEÇALHO*/
-header{
-    height: 60px;
+
+/* Smartphone portrait >>>>>>>>>>>>>>>>>> */
+
+/* Cabeçalho */
+header {
+    height: 65px;
     background-color: var(--azulEscuro);
 }
-.logo img{
-    width: 120px;
-    height: 120px;
-    }
 
-#check{
-    display: none;  /*esconder um elemento*/
+.logo img {
+    width: 128px;
+    height: 128px;
 }
 
-label{
+#check {
+    display: none;
+}
+
+label {
     font-size: 3rem;
     color: rgba(156, 220, 254, 0.75);
     position: fixed;
@@ -49,82 +71,196 @@ label{
     right: 15px;
 }
 
-nav ul{
+nav ul {
     list-style: none;
-    height: 100vh; 
+    height: 100vh;
     position: fixed;
     top: 60px;
-    right: -65%;
+    background-color: var(--azulEscuro);
     width: 65%;
-    background-color: rgba(18, 10, 145, 0.99);
-    transition: all 0.8s;
-}
-#check:checked~ul{
-    right: 0px;
-    
-}
-nav ul li{
-    padding: 20px;
-    border-bottom: 1px solid var(--azulClaro);
-    text-align: right;
-}
-nav ul li a{
-    text-decoration: none;
-    color: black;
+    right: -65%;   
+    transition: all 0.5s;
 }
 
-/*smartphone landscape*/
-@media (min-width: 576px){
-    /* CABEÇALHO */
-    nav ul{
+/* ação para a caixa checkbox */
+/* quando selecionada mudar ul */
+#check:checked~ul {
+    right: 0px;
+}
+
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid var(--cinzaEscuro);
+    text-align: right;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--azulClaro);
+}
+
+/* Principal */
+main {
+    height: 50vh;
+    background: url(img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+main .container {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main h1 {
+    color: var(--branco);
+    font-family: "Koulen", sans-serif;
+    text-shadow: 0px 5px 10px var(--preto),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    color: var(--dourado);
+    font-size: 1.85rem;
+    font-weight: 900;
+    text-shadow: 0px 5px 10px var(--preto),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* Fim - Smartphone portrait <<<<<<<<<<<< */
+
+
+/* Smartphone landscape >>>>>>>>>>>>>>>>> */
+@media (min-width: 576px) {
+
+    /* Layout */
+    .container {
+        max-width: 540px;
+    }
+
+    /* Cabeçalho */
+    nav ul {
         width: 40%;
         right: -40%;
     }
-}
-/*fim smartphone landscape */
-/*tablet-inicio*/
 
-@media (min-width: 992px){
-   
-}
-/*fim tablet*/
+    /* Principal */
+    main {
+        height: 75vh;
+    }
 
-/*notebook / PC - HD inicio*/
-/*CABEÇALHO*/
-@media (min-width: 1200px){
-    header{
+    main h1 {
+        font-size: 2.75rem;
+    }
+
+    main h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Fim - Smartphone landscape <<<<<<<<<<< */
+
+
+/* Tablet portrait >>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 768px) {
+
+    /* Layout */
+    .container {
+        max-width: 720px;
+    }
+
+    /* Principal */
+    main h1 {
+        font-size: 3.9rem;
+    }
+
+    main h2 {
+        font-size: 3rem;
+    }
+}
+
+/* Fim - Tablet portrait <<<<<<<<<<<<<<<< */
+
+
+/* Tablet landscape >>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 992px) {
+
+    /* Layout */
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Fim - Tablet landscape <<<<<<<<<<<<<<< */
+
+
+/* Notebook / PC >>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1200px) {
+
+    /* Layout */
+    .container {
+        justify-content: space-between;
+        max-width: 1140px;
+    }
+
+    /* Cabeçalho */
+    header {
         height: 100px;
     }
 
-    .logo img{
+    .logo img {
         width: 194px;
         height: 194px;
     }
 
-    label{
+    label {
         display: none;
     }
-    nav ul{
-        position: static; /*volta ao padrão*/
+
+    nav ul {
+        position: static;
         width: 100%;
         height: auto;
         background-color: transparent;
+        margin-top: 20px;
     }
 
-    nav ul li{
+    nav ul li {
         float: left;
         border: 0;
     }
 
-    nav ul li a:hover{
-        color: red;
+    nav ul li a:hover {
+        color: var(--dourado);
+    }
+
+    /* Principal */
+    main {
+        height: 85vh;
+    }
+
+}
+
+/* Fim - Notebook / PC <<<<<<<<<<<<<<<<<< */
+
+
+/* Full HD / 4K >>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1400px) {
+
+    /* Layout */
+    .container {
+        max-width: 1320px;
+    }
+
+    /* Principal */
+    main h1 {
+        font-size: 6rem;
+    }
+
+     main h2 {
+        font-size: 4rem;
     }
 }
-/*notebook / pc / fim*/
 
-/*notebook / pc / TV /inicio*/
-@media (min-width: 1400px){
-    
-}
-
-/*notebook / pc / TV /fim*/
+/* Fim - Full HD / 4K <<<<<<<<<<<<<<<<<<< */
