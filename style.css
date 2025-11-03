@@ -1,6 +1,7 @@
 /**
-    Folha de estilo do site Mpf.Assessoria.Aduaneira
-    @author Miguel Dev
+    Folha de estilo do site professorramos.com
+    @author Professor José de Assis
+    @link https://joseassis.com.br
 */
 
 /* Layout >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -27,7 +28,7 @@ body {
 
 .container {
     display: flex;
-    margin: 0 auto;   
+    margin: 0 auto;
 }
 
 /* Botão */
@@ -39,7 +40,7 @@ body {
     padding: 10px 40px;
     color: var(--branco);
     border-radius: 25px;
-    border: 2px solid var(--azulEscuro);
+    border: 2px solid var(--azulClaro);
 }
 
 /* Fim - Layout <<<<<<<<<<<<<<<<<<<<<<<<< */
@@ -54,8 +55,9 @@ header {
 }
 
 .logo img {
-    width: 128px;
-    height: 128px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
 }
 
 #check {
@@ -77,7 +79,7 @@ nav ul {
     top: 60px;
     background-color: var(--azulEscuro);
     width: 65%;
-    right: -65%;   
+    right: -65%;
     transition: all 0.5s;
 }
 
@@ -89,19 +91,19 @@ nav ul {
 
 nav ul li {
     padding: 20px;
-    border-bottom: 1px solid var(--cinzaEscuro);
+    border-bottom: 1px solid var(--azulClaro);
     text-align: right;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: var(--azulClaro);
+    color: var(--branco);
 }
 
 /* Principal */
 main {
-    height: 50vh;
-    background: url(img/banner.jpg);
+    height: 25vh;
+    background: url(./img/terceirafoto.png);
     background-size: cover;
     background-position: center;
 }
@@ -115,16 +117,59 @@ main .container {
 
 main h1 {
     color: var(--branco);
+    font-size: 1.15rem;
     font-family: "Koulen", sans-serif;
-    text-shadow: 0px 5px 10px var(--preto),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
 main h2 {
-    color: var(--dourado);
-    font-size: 1.85rem;
+    color: var(--branco);
+    font-size: 1.10rem;
     font-weight: 900;
-    text-shadow: 0px 5px 10px var(--preto),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
+    text-shadow: 5px 10px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
+}
+
+/* destaque */
+#destaque {
+    padding: 10px 10px;
+    background-color: var(--azulEscuro);
+    background-size: cover;
+    background-position: center;
+}
+
+#destaque .container {
+    flex-direction: column;
+}
+
+#hero {
+    text-align: center;
+}
+
+#hero img {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 25px;
+}
+
+.hero-text h2 {
+    font-size: 1.6rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.topic {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.topic p {
+    margin-left: 15px;
+}
+
+p {
+    color: white;
 }
 
 /* Fim - Smartphone portrait <<<<<<<<<<<< */
@@ -155,6 +200,26 @@ main h2 {
 
     main h2 {
         font-size: 2.5rem;
+    }
+
+    /* DESTAQUE */
+    #destaque {
+        padding: 50px 0px;
+    }
+
+    #destaque .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #hero {
+        text-align: left;
+    }
+
+    #hero img {
+        width: 200px;
+        height: 200px;
+        margin: 0px 30px 0px;
     }
 }
 
@@ -239,6 +304,11 @@ main h2 {
         height: 85vh;
     }
 
+    #hero img {
+        width: 400px;
+        height: 400px;
+    }
+
 }
 
 /* Fim - Notebook / PC <<<<<<<<<<<<<<<<<< */
@@ -257,7 +327,7 @@ main h2 {
         font-size: 6rem;
     }
 
-     main h2 {
+    main h2 {
         font-size: 4rem;
     }
 }
