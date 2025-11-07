@@ -131,15 +131,19 @@ main h2 {
 
 /* destaque */
 #destaque {
-    padding: 50px 10px;
+    padding: 50px 20px;
     background-color: var(--azulEscuro);
     background-size: cover;
     background-position: center;
+    overflow-x: hidden;
 }
 
 #destaque .container {
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+
 
 #hero {
     text-align: center;
@@ -152,9 +156,8 @@ main h2 {
 }
 
 .hero-text h2 {
-    font-size: 1.6rem;
+    font-size: 1.0rem;
     color: #ffffff;
-    margin-bottom: 25px;
 }
 
 .hero-text p {
@@ -164,12 +167,31 @@ main h2 {
 .topic {
     display: flex;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 15px;
 }
 
 .topic p {
-    margin-left: 5px;
+    margin-left: 15px;
     color: var(--branco);
+
+}
+
+
+.video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#video iframe {
+    width: 100%;
+    max-width: 350px;
+    aspect-ratio: 16 / 9;
+    border: none;
+    display: block;
 }
 
 /* Fim - Smartphone portrait <<<<<<<<<<<< */
@@ -183,20 +205,17 @@ main h2 {
         background-color: var(--azulClaro);
     }
 
-    .video {
-        display: flex;
-        justify-content: center;
-    }
-
-    .video iframe {
-        max-width: 100%;
+    #video iframe {
+        max-width: 600px;
+        height: auto;
     }
 
     #sobre .container {
         flex-direction: row;
         align-items: center;
-        
+
     }
+
 
     /* Layout */
     .container {
@@ -360,6 +379,19 @@ main h2 {
 
     main h2 {
         font-size: 4rem;
+    }
+
+    #video {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+    }
+
+    #video iframe {
+        width: 560px;
+        height: 360px;
+        border: none;
+        display: block;
     }
 }
 
