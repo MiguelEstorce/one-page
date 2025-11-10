@@ -1,18 +1,18 @@
-/**
-    Folha de estilo do site professorramos.com
-    @author Professor José de Assis
-    @link https://joseassis.com.br
+/*
+Folha de estilo do site mpfassessoria.com
+@author Miguel Estorce
 */
 
-/* Layout >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* Layout ***************************/
 
 /* Variáveis */
+
 :root {
     --azulClaro: #9cdcfe;
     --azulMedio: #3498db;
     --azulEscuro: rgb(3, 28, 172);
     --branco: #fff;
-    --preto: #000;
+    --preto: #000; 
 }
 
 /* CSS Reset */
@@ -28,21 +28,49 @@ body {
 
 .container {
     display: flex;
-    margin: 0 auto;
+    margin: 0 auto;   
 }
 
-/* Botão */
-.btn {
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: 700;
-    background-color: var(--azulMedio);
-    padding: 10px 40px;
-    color: var(--branco);
-    border-radius: 25px;
+/* botão estilizado */
+.banner-btn {
+  display: inline-block;
+  background-color: var(--azulMedio);
+  color: var(--branco);
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+
+.banner-btn:hover {
+  background-color: var(--cinzaEscuro);
+  color: var(--branco);
+  transform: scale(1.05);
+}
+/*CARD*/
+.card{
+    width: 337px;
+    height: 520px;
+    background-color: var(--azulClaro);
+    margin-top: 25px;
     border: 2px solid var(--azulClaro);
+    border-radius: 25px;
 }
-
+.card img{
+    border-radius: 25px 25px 0px 0px;
+}
+.card h2{
+    font-size: 1.3rem;
+    margin: 15px 0px;
+}
+.card p{
+    color: var(--preto);
+    text-align: left;
+    padding: 0px 10px 25px 10px;
+}
 /* Fim - Layout <<<<<<<<<<<<<<<<<<<<<<<<< */
 
 
@@ -50,13 +78,13 @@ body {
 
 /* Cabeçalho */
 header {
-    height: 65px;
+    height: 55px;
     background-color: var(--azulEscuro);
 }
 
 .logo img {
-    width: 128px;
-    height: 128px;
+    width: 100px;
+    height: 100px;
 }
 
 #check {
@@ -65,9 +93,9 @@ header {
 
 label {
     font-size: 3rem;
-    color: rgba(156, 220, 254, 0.75);
+    color: rgba(156, 220, 254, 0.755);
     position: fixed;
-    top: 5px;
+    top: 0px;
     right: 15px;
 }
 
@@ -78,13 +106,14 @@ nav ul {
     top: 60px;
     background-color: var(--azulEscuro);
     width: 65%;
-    right: -65%;
+    right: -65%;   
     transition: all 0.5s;
 }
 
 /* ação para a caixa checkbox */
 /* quando selecionada mudar ul */
 #check:checked~ul {
+    top: 55px;
     right: 0px;
 }
 
@@ -116,34 +145,30 @@ main .container {
 
 main h1 {
     color: var(--branco);
-    font-size: 1.15rem;
-    font-family: "Koulen", sans-serif;
-    text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+    font-family: "open", sans-serif;
+    text-shadow: 0px 5px 10px var(--preto),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
 main h2 {
     color: var(--branco);
-    font-size: 1.10rem;
+    font-size: 1.85rem;
     font-weight: 900;
-    text-shadow: 5px 10px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 5px 10px var(--preto),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
 }
 
-/* destaque */
+
+/* Destaque */
 #destaque {
-    padding: 50px 20px;
+    padding: 30px 5px;
     background-color: var(--azulEscuro);
     background-size: cover;
     background-position: center;
-    overflow-x: hidden;
 }
 
 #destaque .container {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    flex-direction: column;
 }
-
 
 #hero {
     text-align: center;
@@ -156,8 +181,9 @@ main h2 {
 }
 
 .hero-text h2 {
-    font-size: 1.0rem;
-    color: #ffffff;
+    font-size: 1.6rem;
+    color: var(--preto);
+    margin-bottom: 15px;
 }
 
 .hero-text p {
@@ -172,50 +198,50 @@ main h2 {
 
 .topic p {
     margin-left: 15px;
-    color: var(--branco);
-
 }
 
-
-.video {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+/* Sobre */
+#sobre {
+    margin: 50px 10px;
 }
-
-#video iframe {
+#sobre .container{
+    flex-direction: column;
+}
+#video {
+    margin: 30px 10px;
     width: 100%;
     max-width: 350px;
     aspect-ratio: 16 / 9;
+    align-items: center;
     border: none;
-    display: block;
 }
 
+.about {
+    width: 100%;
+    max-width: 350px;
+    aspect-ratio: 16 / 9;
+    align-items: center;
+    border: none;
+    flex-direction: column;
+    display: flex;
+}
+/*CARTÃO*/
+#Seviços{
+    background-color: var(--azulClaro);
+    padding: 50px 0px;
+}
+#Serviços .container{
+    flex-direction: column;
+    text-align: center;
+}
+#Serviços{
+    background-color: var(--azulEscuro);
+}
 /* Fim - Smartphone portrait <<<<<<<<<<<< */
 
 
 /* Smartphone landscape >>>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
-
-    /*video*/
-    #sobre {
-        background-color: var(--azulClaro);
-    }
-
-    #video iframe {
-        max-width: 600px;
-        height: auto;
-    }
-
-    #sobre .container {
-        flex-direction: row;
-        align-items: center;
-
-    }
-
 
     /* Layout */
     .container {
@@ -234,14 +260,14 @@ main h2 {
     }
 
     main h1 {
-        font-size: 2.00rem;
+        font-size: 2.75rem;
     }
 
     main h2 {
-        font-size: 2.0rem;
+        font-size: 2.5rem;
     }
 
-    /* DESTAQUE */
+    /* Destaque */
     #destaque {
         padding: 50px 0px;
     }
@@ -258,7 +284,11 @@ main h2 {
     #hero img {
         width: 200px;
         height: 200px;
-        margin: 0px 30px 0px;
+        margin: 0px 30px 0px 0px;
+    }
+
+    .topic {
+        display: none;
     }
 
 }
@@ -276,7 +306,7 @@ main h2 {
 
     /* Principal */
     main h1 {
-        font-size: 3.0rem;
+        font-size: 3.9rem;
     }
 
     main h2 {
@@ -336,7 +366,7 @@ main h2 {
     }
 
     nav ul li a:hover {
-        color: var(--dourado);
+        color: var(--azulClaro);
     }
 
     /* Principal */
@@ -344,8 +374,10 @@ main h2 {
         height: 89vh;
     }
 
-    /*destaque*/
-
+    /* Destaque */
+    #destaque {
+        /* background-attachment: fixed; */
+    }
 
     #hero img {
         width: 400px;
@@ -359,6 +391,7 @@ main h2 {
     .topic {
         display: flex;
     }
+
 }
 
 /* Fim - Notebook / PC <<<<<<<<<<<<<<<<<< */
@@ -374,24 +407,11 @@ main h2 {
 
     /* Principal */
     main h1 {
-        font-size: 5rem;
+        font-size: 6rem;
     }
 
-    main h2 {
+     main h2 {
         font-size: 4rem;
-    }
-
-    #video {
-        width: 100%;
-        display: flex;
-        justify-content: right;
-    }
-
-    #video iframe {
-        width: 560px;
-        height: 360px;
-        border: none;
-        display: block;
     }
 }
 
