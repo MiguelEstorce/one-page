@@ -12,7 +12,7 @@ Folha de estilo do site mpfassessoria.com
     --azulMedio: #3498db;
     --azulEscuro: rgb(3, 28, 172);
     --branco: #fff;
-    --preto: #000; 
+    --preto: #000;
 }
 
 /* CSS Reset */
@@ -28,49 +28,58 @@ body {
 
 .container {
     display: flex;
-    margin: 0 auto;   
+    margin: 0 auto;
 }
 
 /* botão estilizado */
 .banner-btn {
-  display: inline-block;
-  background-color: var(--azulMedio);
-  color: var(--branco);
-  padding: 15px 40px;
-  border-radius: 30px;
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: 0.3s ease;
+    display: inline-block;
+    background-color: var(--azulMedio);
+    color: var(--branco);
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
 }
-
 
 .banner-btn:hover {
-  background-color: var(--cinzaEscuro);
-  color: var(--branco);
-  transform: scale(1.05);
+    background-color: var(--cinzaEscuro);
+    color: var(--branco);
+    transform: scale(1.05);
 }
+
 /*CARD*/
-.card{
+.card {
     width: 337px;
     height: 520px;
     background-color: var(--azulClaro);
     margin-top: 25px;
     border: 2px solid var(--azulClaro);
     border-radius: 25px;
+    margin: 0 auto;
 }
-.card img{
+
+.card img {
     border-radius: 25px 25px 0px 0px;
 }
-.card h2{
+
+.card h2 {
     font-size: 1.3rem;
     margin: 15px 0px;
 }
-.card p{
+
+.card p {
     color: var(--preto);
     text-align: left;
     padding: 0px 10px 25px 10px;
 }
+#wireframe h2{
+    margin: 15px 0px;
+    font-size: 1.3rem;
+}
+
 /* Fim - Layout <<<<<<<<<<<<<<<<<<<<<<<<< */
 
 
@@ -106,7 +115,7 @@ nav ul {
     top: 60px;
     background-color: var(--azulEscuro);
     width: 65%;
-    right: -65%;   
+    right: -65%;
     transition: all 0.5s;
 }
 
@@ -146,14 +155,14 @@ main .container {
 main h1 {
     color: var(--branco);
     font-family: "open", sans-serif;
-    text-shadow: 0px 5px 10px var(--preto),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
 }
 
 main h2 {
     color: var(--branco);
     font-size: 1.85rem;
     font-weight: 900;
-    text-shadow: 0px 5px 10px var(--preto),0px 10px 10px rgba(0, 0, 0, 0.15),0px 15px 15px rgba(0, 0, 0, 0.1),0px 20px 20px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15), 0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
 }
 
@@ -204,9 +213,11 @@ main h2 {
 #sobre {
     margin: 50px 10px;
 }
-#sobre .container{
+
+#sobre .container {
     flex-direction: column;
 }
+
 #video {
     margin: 30px 10px;
     width: 100%;
@@ -215,6 +226,45 @@ main h2 {
     align-items: center;
     border: none;
 }
+
+/* Wireframe */
+#wireframe {
+    padding: 50px 10px;
+    margin-top: 20px;
+    background-color:var(--azulClaro);
+}
+
+#textoCloset {
+    text-align: left;
+    padding: 20px;
+
+}
+
+#qrcode {
+    display: block;
+    max-width: 200px;
+    min-width: 100px;
+
+}
+
+#qrcode img {
+    display: none;
+    
+
+}
+
+.wireFrame {
+  display: flex;
+  justify-content: space-between; /* separa texto e imagem */
+  align-items: center;
+
+}
+
+#qrcode {
+  width: 200px;
+  height: auto;
+}
+
 
 .about {
     width: 100%;
@@ -225,18 +275,22 @@ main h2 {
     flex-direction: column;
     display: flex;
 }
+
 /*CARTÃO*/
-#Seviços{
+#servicos {
     background-color: var(--azulClaro);
     padding: 50px 0px;
 }
-#Serviços .container{
+
+#servicos .container {
     flex-direction: column;
     text-align: center;
 }
-#Serviços{
+
+#servicos {
     background-color: var(--azulEscuro);
 }
+
 /* Fim - Smartphone portrait <<<<<<<<<<<< */
 
 
@@ -273,7 +327,7 @@ main h2 {
     }
 
     #destaque .container {
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
     }
 
@@ -324,6 +378,7 @@ main h2 {
     .container {
         max-width: 960px;
     }
+    
 }
 
 /* Fim - Tablet landscape <<<<<<<<<<<<<<< */
@@ -375,9 +430,6 @@ main h2 {
     }
 
     /* Destaque */
-    #destaque {
-        /* background-attachment: fixed; */
-    }
 
     #hero img {
         width: 400px;
@@ -390,6 +442,16 @@ main h2 {
 
     .topic {
         display: flex;
+    }
+     #servicos .container {
+        display: flex;
+        flex-direction: row;
+    }
+    #qrcode img{
+        display: flex;
+    }
+    #wireframe .qrcode{
+        text-align: right;
     }
 
 }
@@ -407,11 +469,16 @@ main h2 {
 
     /* Principal */
     main h1 {
-        font-size: 6rem;
+        font-size: 4rem;
     }
 
-     main h2 {
+    main h2 {
         font-size: 4rem;
+    }
+
+    #servicos .container {
+        display: flex;
+        flex-direction: row;
     }
 }
 
