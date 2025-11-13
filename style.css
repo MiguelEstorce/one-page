@@ -291,6 +291,22 @@ main h2 {
     background-color: var(--azulEscuro);
 }
 
+/*RODAPÉ*/
+
+footer{
+    padding: 25px 10px;
+    background-color: var(--azulEscuro);
+    color: var(--branco);
+    align-items: center;
+}
+#social{
+    margin-bottom: 25px;
+}
+#copyright a{
+    text-decoration: none;
+    color: var(--branco);
+}
+
 /* Fim - Smartphone portrait <<<<<<<<<<<< */
 
 
