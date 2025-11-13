@@ -1,4 +1,4 @@
-/*
+*
 Folha de estilo do site mpfassessoria.com
 @author Miguel Estorce
 */
@@ -360,7 +360,16 @@ footer{
     .topic {
         display: none;
     }
+    /*rodapé*/
+    .Flex5 {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+   }
 
+   #social {
+      margin-bottom: 0px;
+   }
 }
 
 /* Fim - Smartphone landscape <<<<<<<<<<< */
