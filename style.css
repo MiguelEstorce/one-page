@@ -1,6 +1,6 @@
 /*
 Folha de estilo do site mpfassessoria.com
-@author Miguel Estorce
+@author Miguel Estorce Dev
 */
 
 /* Variáveis */
@@ -78,6 +78,7 @@ body {
   font-weight: bold;
   background-color: var(--azulEscuro);
   padding: 15px 40px;
+  border: var(--branco) solid 3px;
   border-radius: 30px;
   transition: 0.3s ease;
 }
@@ -91,7 +92,7 @@ body {
 /* Card */
 .Card {
   margin-top: 25px;
-  width: 345px;
+  width: 330px;
   height: 540px;
   background-color: var(--branco);
   border: 4px solid var(--preto);
@@ -125,12 +126,20 @@ body {
   justify-content: space-between;
 }
 
-/* ADICIONADO → Botão sempre no final */
-.Card a {
-  padding: 10px 100px;
-  display: inline-block;
-  margin-top: auto;
-  
+.botao-card {
+  display: block;
+  margin: 15px auto 0 auto;
+  width: 150px; /* curto */
+  padding: 10px 20px;
+  text-align: center;
+  background-color: var(--azulEscuro);
+  color: var(--branco);
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 30px;
+  border: solid 3px var(--preto);
+  text-decoration: none;
+  transition: 0.3s ease;
 }
 
 /* Cabeçalho */
@@ -199,10 +208,8 @@ main {
 main h1 {
   font-size: 3rem;
   font-weight: 900;
-  text-shadow: 0px 5px 10px var(--preto),
-    0px 10px 10px rgba(0, 0, 0, 0.15),
-    0px 15px 15px rgba(0, 0, 0, 0.1),
-    0px 20px 20px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15),
+    0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
   margin: 10px 0;
 }
 
@@ -215,7 +222,7 @@ main h2 {
 
 /* Sobre */
 #sobre {
-  padding: 100px 0;
+  padding: 50px 0;
   background-color: var(--azulClaro);
 }
 
@@ -260,8 +267,9 @@ main h2 {
 }
 
 /* blocovideo */
+
 #blocovideo {
-  padding: 50px 10px;
+  padding: 20px 0px;
   color: var(--branco);
 }
 
@@ -281,12 +289,12 @@ main h2 {
 
 /* PDF + QRCode */
 #wireframe {
-  padding: 50px 0;
+  padding: 20px 0;
   background-color: var(--azulClaro);
 }
 
 #wireframe a {
-  border: 2px solid var(--azulEscuro);
+  font-size: 1.5rem;
 }
 
 #textoMpf {
@@ -472,10 +480,8 @@ footer a {
   main h2 {
     font-size: 1.6rem;
     font-weight: 800;
-    text-shadow: 0px 5px 10px var(--preto),
-      0px 10px 10px rgba(0, 0, 0, 0.15),
-      0px 15px 15px rgba(0, 0, 0, 0.1),
-      0px 20px 20px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 5px 10px var(--preto), 0px 10px 10px rgba(0, 0, 0, 0.15),
+      0px 15px 15px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
     margin-bottom: 50px;
   }
 
@@ -485,6 +491,16 @@ footer a {
 
   #destaqueSobre {
     display: inline;
+  }
+
+  #blocovideo .cont3 {
+    flex-direction: row; /* texto ← → vídeo */
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #blocovideo #video {
+    margin-left: auto; /* empurra o vídeo para a direita */
   }
 
   #destaqueSobre img {
@@ -542,7 +558,7 @@ footer a {
   }
 
   main h1 {
-    font-size: 3.0rem;
+    font-size: 3rem;
   }
 
   main h2 {
